@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #6E6E6E;
+    min-height: 100vh;
+
+}
+header{
+    display: flex;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+.navbar{
+    display: flex; 
+    animation: slideRight 1s ease forwards;
+}
+.navbar a{
+    color: white;
+    font-size:20px;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;   
+}
+.navbar a:hover{
+    color: #BCFD4C;
+}
+.navbar a.active{
+    color: #BCFD4C;
+}
+.main{
+    display: flex;
+    align-items: center;
+    animation: slideRight 1s ease forwards;
+}
+.main a{
+    margin-right:25px;
+    margin-left: 10px;
+    color: white;
+    font-size:20px;
+    font-weight: 500;
+    transition: all .50s ease;   
+}
+.main a:hover{
+    color: #BCFD4C;
+} 
+.user{
+    display: flex;
+    align-items: center;
+   
+}
+.user i{
+    margin-right: 7px;
+    color: #BCFD4C;
+}
+@media(max-width:1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px;
+    }
+
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-section{
+    max-width: 600px;
+}
+.home-section h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.home-section h3{
+    font-size: 36px;
+    font-weight: 700;
+    color: #BCFD4C;
+}
+.about{
+    font-size: 30px ;
+    color: white;
+    text-align: center;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+.about h2{
+    padding: 20px;
+    margin:20px;
+}
+.image{
+    padding-left:1500px ;
+    display: flex;
+}
+   
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+  
+    .about .image {
+      margin: 20px 0 0; 
+    }
+  }
+  .services{
+    background:#6E6E6E ;
+    padding: 100px 0;
+    width: 100%;
+    max-width: 3000px;
+
+  }
+  .services h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin:30px auto;
+  }
+.box{
+    margin-left: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+.card{
+    height: 500px;
+    width: 410px;
+    padding: 20px 35px;
+    background: #BCFD4C;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+}
+.contact{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 100px;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 480px;
+    font-weight: 600;
+    color: #BCFD4C;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color:white;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+label a:hover{
+    color: #BCFD4C;
+}
+
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: #BCFD4C;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    
+
+}
+
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+
+    top: -35px;
+    font-size: 14px;
+    color: #BCFD4C;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
+.ending{
+   padding: 40px;
+   margin-top: 70px;
+    text-align: center;
+    background-color: #BCFD4C;
+    color: white;
+    font-size: 25px;
+}
